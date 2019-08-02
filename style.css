@@ -1,0 +1,44 @@
+html, * {
+    font-family: helvetica;
+    box-sizing: border-box;
+  }
+  
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+main {
+      display: grid;
+      grid-template-columns: 30vmin 15vmin 30vmin;
+      grid-template-rows: 10vmin 10vmin 30vmin 15vmin;
+  }
+
+ main * {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ main button {
+    grid-column: 1 / 4;
+    margin: 2vmin 0;
+    background-color: white;
+    border: 3px solid black;
+    font-size: 16px; 
+    border-radius: 2vmin;
+ }
+
+ 
+
+#p-result, #c-result {
+    border: 1vmin solid grey;
+    border-radius: 3vmin;
+}
+
+#p-result img, #c-result img {
+    width: 100%;
+}
